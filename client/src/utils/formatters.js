@@ -82,6 +82,9 @@ export const optimizeCloudinaryUrl = (url, { width, quality = 'auto', format = '
   if (!url || typeof url !== 'string' || !url.includes('cloudinary.com')) return url;
   if (url.includes('/f_auto') || url.includes('/q_auto')) return url;
 
+  // Protect video stream assets: Do not apply image format optimizations to video files
+  if (url.includes('/video/upload/') || url.match(/\.(mp4|webm|mkv|mov|m4v)(\?.*)?$/i)) return url;
+
   const transformations = [`f_${format}`, `q_${quality}`];
   if (width) transformations.push(`w_${width}`, 'c_limit');
   const transformStr = transformations.join(',');

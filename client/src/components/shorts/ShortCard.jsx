@@ -221,14 +221,14 @@ export default function ShortCard({
       {/* ─── 9:16 Vertical Video Frame ─────────────────────────── */}
       <div className="relative w-full max-w-[420px] h-full max-h-[820px] aspect-[9/16] bg-black rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl shadow-black border border-white/5 flex items-center justify-center">
         {/* Native Video */}
-        {short.videoFile?.url ? (
+        {(short.videoFile?.url || short.videoUrl) ? (
           <video
             ref={videoRef}
-            src={short.videoFile.url}
+            src={short.videoFile?.url || short.videoUrl}
             poster={short.thumbnail?.url || short.thumbnail}
             loop
             playsInline
-            preload="metadata"
+            preload="auto"
             onClick={togglePlay}
             onTimeUpdate={handleTimeUpdate}
             onWaiting={() => setIsBuffering(true)}

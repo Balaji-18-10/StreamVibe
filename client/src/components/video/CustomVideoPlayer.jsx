@@ -278,7 +278,7 @@ export default function CustomVideoPlayer({
           src={url}
           poster={thumbnail}
           playsInline
-          preload="metadata"
+          preload="auto"
           onClick={togglePlay}
           onTimeUpdate={handleTimeUpdate}
           onLoadedMetadata={handleLoadedMetadata}

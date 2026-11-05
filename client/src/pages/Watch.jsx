@@ -253,7 +253,7 @@ export default function Watch() {
       <div className="flex-1 min-w-0 flex flex-col gap-4">
         {/* 1. Custom Video Player */}
         <CustomVideoPlayer
-          url={video.videoFile?.url}
+          url={video.videoFile?.url || video.videoUrl}
           thumbnail={video.thumbnail?.url || video.thumbnail}
           title={video.title}
           onPlay={handleRecordView}

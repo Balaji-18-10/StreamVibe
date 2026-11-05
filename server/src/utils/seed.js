@@ -26,7 +26,7 @@ const SAMPLE_VIDEOS = [
     category: 'Tech',
     tags: ['tech', 'streaming', 'architecture', 'nodejs'],
     thumbnailUrl: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&auto=format&fit=crop&q=80',
-    videoUrl: 'https://res.cloudinary.com/demo/video/upload/sample.mp4',
+    videoUrl: 'https://res.cloudinary.com/demo/video/upload/cld_rubik.mp4',
     daysAgo: 1,
   },
   {
@@ -40,7 +40,7 @@ const SAMPLE_VIDEOS = [
     category: 'Gaming',
     tags: ['gaming', 'cyberpunk', 'raytracing', 'benchmark'],
     thumbnailUrl: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop&q=80',
-    videoUrl: 'https://res.cloudinary.com/demo/video/upload/sample.mp4',
+    videoUrl: 'https://res.cloudinary.com/demo/video/upload/skate.mp4',
     daysAgo: 2,
   },
   {
@@ -54,7 +54,7 @@ const SAMPLE_VIDEOS = [
     category: 'Music',
     tags: ['music', 'synthwave', 'coding', 'chill'],
     thumbnailUrl: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&auto=format&fit=crop&q=80',
-    videoUrl: 'https://res.cloudinary.com/demo/video/upload/sample.mp4',
+    videoUrl: 'https://res.cloudinary.com/demo/video/upload/elephants.mp4',
     daysAgo: 3,
   },
   {
@@ -68,7 +68,7 @@ const SAMPLE_VIDEOS = [
     category: 'Entertainment',
     tags: ['design', 'ui', 'ux', 'trends'],
     thumbnailUrl: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800&auto=format&fit=crop&q=80',
-    videoUrl: 'https://res.cloudinary.com/demo/video/upload/sample.mp4',
+    videoUrl: 'https://res.cloudinary.com/demo/video/upload/sea_turtle.mp4',
     daysAgo: 4,
   },
   {
@@ -82,7 +82,7 @@ const SAMPLE_VIDEOS = [
     category: 'Education',
     tags: ['education', 'mern', 'socketio', 'tutorial'],
     thumbnailUrl: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&auto=format&fit=crop&q=80',
-    videoUrl: 'https://res.cloudinary.com/demo/video/upload/sample.mp4',
+    videoUrl: 'https://res.cloudinary.com/demo/video/upload/dog.mp4',
     daysAgo: 5,
   },
   {
@@ -96,7 +96,7 @@ const SAMPLE_VIDEOS = [
     category: 'Gaming',
     tags: ['gaming', 'unrealengine', 'gamedev', '3d'],
     thumbnailUrl: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&auto=format&fit=crop&q=80',
-    videoUrl: 'https://res.cloudinary.com/demo/video/upload/sample.mp4',
+    videoUrl: 'https://res.cloudinary.com/demo/video/upload/forest_bike.mp4',
     daysAgo: 6,
   },
 ];
@@ -113,7 +113,7 @@ const SAMPLE_SHORTS = [
     category: 'Tech',
     tags: ['shorts', 'css', 'webdev', 'tech'],
     thumbnailUrl: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&auto=format&fit=crop&q=80',
-    videoUrl: 'https://res.cloudinary.com/demo/video/upload/sample.mp4',
+    videoUrl: 'https://res.cloudinary.com/demo/video/upload/cld_rubik.mp4',
     daysAgo: 1,
   },
   {
@@ -127,7 +127,7 @@ const SAMPLE_SHORTS = [
     category: 'Gaming',
     tags: ['shorts', 'gaming', 'unrealengine', 'physics'],
     thumbnailUrl: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&auto=format&fit=crop&q=80',
-    videoUrl: 'https://res.cloudinary.com/demo/video/upload/sample.mp4',
+    videoUrl: 'https://res.cloudinary.com/demo/video/upload/skate.mp4',
     daysAgo: 2,
   },
   {
@@ -141,7 +141,7 @@ const SAMPLE_SHORTS = [
     category: 'Music',
     tags: ['shorts', 'music', 'piano', 'chords'],
     thumbnailUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format&fit=crop&q=80',
-    videoUrl: 'https://res.cloudinary.com/demo/video/upload/sample.mp4',
+    videoUrl: 'https://res.cloudinary.com/demo/video/upload/elephants.mp4',
     daysAgo: 3,
   },
   {
@@ -155,7 +155,7 @@ const SAMPLE_SHORTS = [
     category: 'Tech',
     tags: ['shorts', 'ai', 'agents', 'automation'],
     thumbnailUrl: 'https://images.unsplash.com/photo-1677442136019-21780efad99a?w=600&auto=format&fit=crop&q=80',
-    videoUrl: 'https://res.cloudinary.com/demo/video/upload/sample.mp4',
+    videoUrl: 'https://res.cloudinary.com/demo/video/upload/kitten_fighting.mp4',
     daysAgo: 2,
   },
   {
@@ -169,7 +169,7 @@ const SAMPLE_SHORTS = [
     category: 'Education',
     tags: ['shorts', 'coding', 'leetcode', 'algorithms'],
     thumbnailUrl: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&auto=format&fit=crop&q=80',
-    videoUrl: 'https://res.cloudinary.com/demo/video/upload/sample.mp4',
+    videoUrl: 'https://res.cloudinary.com/demo/video/upload/dog.mp4',
     daysAgo: 4,
   },
   {
@@ -183,7 +183,7 @@ const SAMPLE_SHORTS = [
     category: 'Food',
     tags: ['shorts', 'food', 'wagyu', 'japan'],
     thumbnailUrl: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop&q=80',
-    videoUrl: 'https://res.cloudinary.com/demo/video/upload/sample.mp4',
+    videoUrl: 'https://res.cloudinary.com/demo/video/upload/sea_turtle.mp4',
     daysAgo: 1,
   },
   {
@@ -197,7 +197,7 @@ const SAMPLE_SHORTS = [
     category: 'Sports',
     tags: ['shorts', 'sports', 'speedflying', 'alps'],
     thumbnailUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&auto=format&fit=crop&q=80',
-    videoUrl: 'https://res.cloudinary.com/demo/video/upload/sample.mp4',
+    videoUrl: 'https://res.cloudinary.com/demo/video/upload/snow_horses.mp4',
     daysAgo: 3,
   },
   {
@@ -211,7 +211,7 @@ const SAMPLE_SHORTS = [
     category: 'Tech',
     tags: ['shorts', 'quantum', 'science', 'physics'],
     thumbnailUrl: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=600&auto=format&fit=crop&q=80',
-    videoUrl: 'https://res.cloudinary.com/demo/video/upload/sample.mp4',
+    videoUrl: 'https://res.cloudinary.com/demo/video/upload/cld_rubik.mp4',
     daysAgo: 2,
   },
 ];
