@@ -27,6 +27,27 @@ import { getDBStatus } from './config/db.js';
 
 const app = express();
 
+// ─── Reverse Proxy Configuration ──────────────────────────
+// Configure Express 'trust proxy' for reverse proxy environments (Render, Cloudflare, AWS ALB).
+// We trust 1 hop by default (the front-facing reverse proxy). This prevents client IP spoofing
+// while allowing Express and express-rate-limit to accurately identify client IP addresses from X-Forwarded-For.
+const rawTrust = process.env.TRUST_PROXY || process.env.TRUST_PROXY_HOPS;
+let trustProxySetting = 1; // Default to 1 hop for Render / reverse proxy environments
+if (rawTrust !== undefined && rawTrust !== '') {
+  const parsedNum = Number(rawTrust);
+  if (!isNaN(parsedNum)) {
+    trustProxySetting = parsedNum;
+  } else if (rawTrust === 'true') {
+    // Avoid insecure blind trust ('true'); restrict to 1 hop for reverse proxy environments
+    trustProxySetting = 1;
+  } else if (rawTrust === 'false') {
+    trustProxySetting = false;
+  } else {
+    trustProxySetting = rawTrust;
+  }
+}
+app.set('trust proxy', trustProxySetting);
+
 // ─── Security Middleware ──────────────────────────────────
 app.use(helmet({
   crossOriginResourcePolicy: { policy: 'cross-origin' },
